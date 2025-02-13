@@ -1,0 +1,146 @@
+.block-play {
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		text-transform: uppercase;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		span {
+			font-weight: 700;
+			font-size: 20px;
+			color: var(--basic-orange);
+			text-transform: uppercase;
+			font-family: var(--base-font);
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+			fill: var(--basic-orange);
+		}
+	}
+
+	&__article {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		width: 100%;
+		height: 100%;
+		min-height: 785px;
+		background-color: var(--basic-white);
+		position: relative;
+		border-radius: 20px;
+		overflow: hidden;
+		transition: all 0.3s ease;
+
+		&:hover {
+			background-color: var(--basic-black);
+
+			.block-play__button {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.block-play__text {
+				h3 {
+					color: var(--basic-white);
+				}
+
+				p {
+					color: var(--basic-white);
+				}
+			}
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(621px, 1fr));
+		gap: 6px;
+		margin-top: 65px;
+	}
+
+	&__icon {
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-height: 520px;
+		max-height: 520px;
+
+		&--small {
+			width: 100%;
+			max-width: 655px;
+			background-size: auto;
+			background-position: top right;
+		}
+	}
+
+	&__button {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: var(--basic-orange);
+		width: 100%;
+		border-radius: 16px;
+		padding: 20px 24px 20px 24px;
+		margin-top: 17px;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease, visibility 0.3s ease;
+
+
+		svg {
+			width: 24px;
+			height: 24px;
+			fill: var(--basic-white);
+		}
+
+		span {
+			color: var(--basic-white);
+			font-weight: 700;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-family: var(--base-font);
+		}
+	}
+
+	&__icon--radius {
+		border-radius: 20px 20px 640px 640px;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		min-height: 178px;
+		gap: 15px;
+		padding: 0 25px 24px 25px;
+		height: auto;
+		width: 100%;
+		margin-top: auto;
+		transform: translate3d(0, 85px, 0);
+
+		h3 {
+			text-transform: uppercase;
+		}
+
+		p {
+			font-family: var(--text-font);
+			font-weight: 500;
+			font-size: 16px;
+			color: var(--basic-black);
+		}
+	}
+}

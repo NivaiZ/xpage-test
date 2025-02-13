@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Тестовое задание для компании XPAGE" />
+		<meta name="keywords" content="XPAGE, тестовое задание, XPAGE" />
+		<title>Главная</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header" data-action="header__scroll" aria-expanded="false">
+			<div class="header__container">
+				<div class="header__inner">
+					<div class="header__wrapper">
+						<div class="header__logo">
+							<a class="header__logo-link" aria-label="Переход на главную" href="/">
+								<img class="header__logo-img" src="./img/logo.svg" alt="Логотип компании" />
+							</a>
+						</div>
+
+						<nav class="header__nav">
+							<ul class="header__nav-list">
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="#" aria-label="играть">играть</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="#" aria-label="смотреть">смотреть</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="#" aria-label="учиться">учиться</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="#" aria-label="мероприятия">мероприятия</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<ul class="header__right">
+						<li class="header__right-item header__right-gap">
+							<button class="header__right-button" data-action="burger-button" aria-label="burger-menu" aria-expanded="false">
+								<span class="header__right-button-line"></span>
+							</button>
+							<span class="header__right-button-text">Меню</span>
+						</li>
+
+						<li class="header__right-item">
+							<button class="header__right-profile" type="button" aria-label="переход в профиль">
+								<span class="header__right-text">геннадий П.</span>
+								<i class="header__right-avatar" style="background-image: url('img/ava__mock.png');"></i>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="page-layout">
+			<section class="general-banner">
+				<div class="general-banner__container">
+					<div class="general-banner__swiper swiper">
+						<div class="general-banner__wrapper swiper-wrapper">
+							<div class="general-banner__slide swiper-slide" data-slide="1">
+								<figure class="general-banner__figure">
+									<picture>
+										<source srcset="./img/main-banner/main__banner-one--mobile.webp" media="(max-width: 991px)" />
+										<img src="./img/main-banner/main__banner-one.webp" alt="" />
+									</picture>
+								</figure>
+								<div class="general-banner__title title__h1">Найди с&#160;кем <br />поиграть в&#160;баскет</div>
+							</div>
+
+							<div class="general-banner__slide swiper-slide" data-slide="2">
+								<figure class="general-banner__figure">
+									<picture>
+										<source srcset="./img/main-banner/main__banner-two--mobile.webp" media="(max-width: 991px)" />
+										<img src="./img/main-banner/main__banner-two.webp" alt="" />
+									</picture>
+								</figure>
+								<div class="general-banner__title title__h1">Найди с&#160;кем поиграть в&#160;баскет[0]</div>
+							</div>
+
+							<div class="general-banner__slide swiper-slide" data-slide="3">
+								<figure class="general-banner__figure">
+									<picture>
+										<source srcset="./img/main-banner/main__banner-three--mobile.webp" media="(max-width: 991px)" />
+										<img src="./img/main-banner/main__banner-three.webp" alt="" />
+									</picture>
+								</figure>
+								<div class="general-banner__title title__h1">Найди с&#160;кем поиграть в&#160;баскет[1]</div>
+							</div>
+						</div>
+
+						<ul class="general-banner__pagination">
+							<li class="general-banner__pagination-item">
+								<button class="general-banner__pagination-button" type="button" aria-label="играй" data-button="1" data-action="choose-button">
+									<span>играй</span>
+									<svg>
+										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+									</svg>
+								</button>
+							</li>
+
+							<li class="general-banner__pagination-item">
+								<button class="general-banner__pagination-button" type="button" aria-label="учись" data-button="2" data-action="choose-button">
+									<span>учись</span>
+									<svg>
+										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+									</svg>
+								</button>
+							</li>
+
+							<li class="general-banner__pagination-item">
+								<button class="general-banner__pagination-button" type="button" aria-label="смотри" data-button="3" data-action="choose-button">
+									<span>смотри</span>
+									<svg>
+										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="block-play section">
+				<div class="block-play__container">
+					<div class="block-play__box">
+						<h2 class="block-play__title title__h2">играй</h2>
+						<a class="block-play__link block-play__link--orange" href="#" aria-label="в раздел">
+							<span>в&#160;раздел</span>
+							<svg>
+								<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+							</svg>
+						</a>
+					</div>
+
+					<div class="block-play__content">
+						<article class="block-play__article">
+							<i class="block-play__icon block-play__icon--radius" style="background-image: url('img/block-play/block-play__one.webp');"></i>
+
+							<div class="block-play__text">
+								<h3>Найди себе <br />команду</h3>
+								<p>
+									Игры на&#160;районе&#160;&#8212; это возможность найти с&#160;кем поиграть в&#160;баскетбол в&#160;выходные, или создать свою игру и пригласить
+									других игроков присоединиться.
+								</p>
+								<button class="block-play__button" type="button" aria-label="текст кнопки">
+									<span>текст кнопки</span>
+									<svg>
+										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</article>
+
+						<article class="block-play__article">
+							<i class="block-play__icon block-play__icon--small" style="background-image: url('img/block-play/block-play__two.webp');"></i>
+
+							<div class="block-play__text">
+								<h3>Создавай <br />команды</h3>
+								<p>
+									Игры на&#160;районе&#160;&#8212; это возможность найти с&#160;кем поиграть в&#160;баскетбол в&#160;выходные, или создать свою игру и пригласить
+									других игроков присоединиться.
+								</p>
+								<button class="block-play__button" type="button" aria-label="текст кнопки">
+									<span>текст кнопки</span>
+									<svg>
+										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</article>
+
+						<article class="block-play__article">
+							<i class="block-play__icon block-play__icon--radius" style="background-image: url('img/block-play/block-play__three.webp');"></i>
+
+							<div class="block-play__text">
+								<h3>Участвуй <br />в&#160;турнирах</h3>
+								<p>
+									Участвуйте в&#160;турнирах вместе с&#160;вашей командой. Будьте активными, побеждайте и&#160;получайте ачивки и&#160;призы от&#160;наших
+									спонсоров.
+								</p>
+								<button class="block-play__button" type="button" aria-label="текст кнопки">
+									<span>текст кнопки</span>
+									<svg>
+										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+
+		<div class="scroll-top" title="Прокрутка вверх">
+			<button class="scroll-top__button" type="button" data-action="scroll-top">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+					<path
+						d="M10.0002 17.5V2.5M10.0002 2.5L5.8335 6.66667M10.0002 2.5L14.1668 6.66667"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</button>
+		</div>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

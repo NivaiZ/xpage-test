@@ -1,0 +1,42 @@
+:root {
+	--container-width: 1200px;
+	--container-padding: 15px;
+
+	--font-main: "Commissioner", sans-serif;
+	--base-font: "DrukWideCyr", sans-serif;
+	--text-font: "Inter", sans-serif;
+
+	--page-bg: #ECECEC;
+	--basic-white: #FFFFFF;
+	--basic-black: #202020;
+	--basic-grey: #EFEFEF;
+	--basic-orange: #F36722;
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+
+@keyframes slideInDown {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideOutToTop {
+	from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+}
