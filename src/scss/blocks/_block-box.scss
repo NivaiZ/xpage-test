@@ -1,0 +1,39 @@
+.block-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__title {
+		text-transform: uppercase;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		span {
+			font-weight: 700;
+			font-size: 20px;
+			color: var(--basic-orange);
+			text-transform: uppercase;
+			font-family: var(--base-font);
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+			fill: var(--basic-orange);
+		}
+	}
+
+	&__link--green {
+		span {
+			color: var(--basic-green);
+		}
+
+		svg {
+			fill: var(--basic-green);
+		}
+	}
+}

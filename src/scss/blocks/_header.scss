@@ -26,6 +26,17 @@
 		background-color: var(--basic-grey);
 		padding: 3px 3px 3px 16px;
 		border-radius: 20px;
+		transition: all 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--basic-orange);
+
+				.header__right-text {
+					color: var(--basic-white);
+				}
+			}
+		}
 	}
 
 	&__right-text {
@@ -34,6 +45,7 @@
 		font-weight: 700;
 		color: var(--basic-black);
 		text-transform: uppercase;
+		transition: all 0.3s ease;
 	}
 
 	&__right {
@@ -61,6 +73,11 @@
 		font-family: var(--base-font);
 		color: var(--basic-black);
 		text-transform: uppercase;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: var(--basic-orange);
+		}
 	}
 
 	&__inner {
@@ -105,7 +122,7 @@
 
 	&__right-button {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 		margin: 0;
@@ -117,6 +134,27 @@
 		background: 0 0;
 		border: 0;
 		height: 24px;
+		transition: all 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				.header__right-button-line {
+					background-color: var(--basic-orange);
+
+					&::before {
+						background-color: var(--basic-orange);
+					}
+
+					&::after {
+						background-color: var(--basic-orange);
+					}
+				}
+
+				.header__right-button-text {
+					color: var(--basic-orange);
+				}
+			}
+		}
 	}
 
 	&__right-item {
@@ -125,11 +163,13 @@
 	}
 
 	&__right-button-text {
+		display: block;
 		font-weight: 700;
 		font-size: 14px;
 		color: var(--basic-black);
 		font-family: var(--base-font);
 		text-transform: uppercase;
+		transition: all 0.3s ease;
 	}
 
 	&__right-gap {

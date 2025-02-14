@@ -45,11 +45,11 @@
 					</div>
 
 					<ul class="header__right">
-						<li class="header__right-item header__right-gap">
-							<button class="header__right-button" data-action="burger-button" aria-label="burger-menu" aria-expanded="false">
+						<li class="header__right-item">
+							<button class="header__right-button header__right-gap" data-action="burger-button" aria-label="burger-menu" aria-expanded="false">
 								<span class="header__right-button-line"></span>
+								<span class="header__right-button-text">Меню</span>
 							</button>
-							<span class="header__right-button-text">Меню</span>
 						</li>
 
 						<li class="header__right-item">
@@ -74,7 +74,7 @@
 										<img src="./img/main-banner/main__banner-one.webp" alt="" />
 									</picture>
 								</figure>
-								<div class="general-banner__title title__h1">Найди с&#160;кем <br />поиграть в&#160;баскет</div>
+								<h1 class="general-banner__title title__h1">Найди с&#160;кем поиграть в&#160;баскет</h1>
 							</div>
 
 							<div class="general-banner__slide swiper-slide" data-slide="2">
@@ -100,30 +100,30 @@
 
 						<ul class="general-banner__pagination">
 							<li class="general-banner__pagination-item">
-								<button class="general-banner__pagination-button" type="button" aria-label="играй" data-button="1" data-action="choose-button">
+								<a class="general-banner__pagination-bullet" aria-label="играй" data-button="1" data-action="choose-button" href="#" target="_blank">
 									<span>играй</span>
 									<svg>
 										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
 									</svg>
-								</button>
+								</a>
 							</li>
 
 							<li class="general-banner__pagination-item">
-								<button class="general-banner__pagination-button" type="button" aria-label="учись" data-button="2" data-action="choose-button">
+								<a class="general-banner__pagination-bullet" aria-label="учись" data-button="2" data-action="choose-button" href="#" target="_blank">
 									<span>учись</span>
 									<svg>
 										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
 									</svg>
-								</button>
+								</a>
 							</li>
 
 							<li class="general-banner__pagination-item">
-								<button class="general-banner__pagination-button" type="button" aria-label="смотри" data-button="3" data-action="choose-button">
+								<a class="general-banner__pagination-bullet" aria-label="смотри" data-button="3" data-action="choose-button" href="#" target="_blank">
 									<span>смотри</span>
 									<svg>
 										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
 									</svg>
-								</button>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -131,9 +131,9 @@
 			</section>
 			<section class="block-play section">
 				<div class="block-play__container">
-					<div class="block-play__box">
-						<h2 class="block-play__title title__h2">играй</h2>
-						<a class="block-play__link block-play__link--orange" href="#" aria-label="в раздел">
+					<div class="block-play__box block-box">
+						<h2 class="block-box__title title__h2">играй</h2>
+						<a class="block-box__link block-box__link--orange" href="#" aria-label="в раздел">
 							<span>в&#160;раздел</span>
 							<svg>
 								<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
@@ -146,35 +146,36 @@
 							<i class="block-play__icon block-play__icon--radius" style="background-image: url('img/block-play/block-play__one.webp');"></i>
 
 							<div class="block-play__text">
-								<h3>Найди себе <br />команду</h3>
+								<h4>Найди себе <br />команду</h4>
 								<p>
 									Игры на&#160;районе&#160;&#8212; это возможность найти с&#160;кем поиграть в&#160;баскетбол в&#160;выходные, или создать свою игру и пригласить
 									других игроков присоединиться.
 								</p>
-								<button class="block-play__button" type="button" aria-label="текст кнопки">
+								<a class="block-play__button" aria-label="текст кнопки" href="#" target="_blank">
 									<span>текст кнопки</span>
 									<svg>
 										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
 									</svg>
-								</button>
+								</a>
 							</div>
+							<a class="block-play__link block-play__link--mobile" href="#" target="_blank" aria-label="переход на детальную страницу"></a>
 						</article>
 
 						<article class="block-play__article">
 							<i class="block-play__icon block-play__icon--small" style="background-image: url('img/block-play/block-play__two.webp');"></i>
 
 							<div class="block-play__text">
-								<h3>Создавай <br />команды</h3>
+								<h4>Создавай <br />команды</h4>
 								<p>
 									Игры на&#160;районе&#160;&#8212; это возможность найти с&#160;кем поиграть в&#160;баскетбол в&#160;выходные, или создать свою игру и пригласить
 									других игроков присоединиться.
 								</p>
-								<button class="block-play__button" type="button" aria-label="текст кнопки">
+								<a class="block-play__button" aria-label="текст кнопки" href="#" target="_blank">
 									<span>текст кнопки</span>
 									<svg>
 										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
 									</svg>
-								</button>
+								</a>
 							</div>
 						</article>
 
@@ -182,19 +183,161 @@
 							<i class="block-play__icon block-play__icon--radius" style="background-image: url('img/block-play/block-play__three.webp');"></i>
 
 							<div class="block-play__text">
-								<h3>Участвуй <br />в&#160;турнирах</h3>
+								<h4>Участвуй <br />в&#160;турнирах</h4>
 								<p>
 									Участвуйте в&#160;турнирах вместе с&#160;вашей командой. Будьте активными, побеждайте и&#160;получайте ачивки и&#160;призы от&#160;наших
 									спонсоров.
 								</p>
-								<button class="block-play__button" type="button" aria-label="текст кнопки">
+								<a class="block-play__button" aria-label="текст кнопки" href="#" target="_blank">
 									<span>текст кнопки</span>
 									<svg>
 										<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
 									</svg>
-								</button>
+								</a>
 							</div>
 						</article>
+					</div>
+				</div>
+			</section>
+			<section class="block-learn section">
+				<div class="block-learn__container">
+					<div class="block-learn__inner">
+						<div class="block-learn__box block-box">
+							<h2 class="block-box__title title__h2">учись</h2>
+							<a class="block-box__link block-box__link--green" href="#" aria-label="в раздел">
+								<span>в&#160;раздел</span>
+								<svg>
+									<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="block-learn__content">
+							<article class="block-learn__article block-learn__article--img">
+								<div class="block-learn__bg" style="background-image: url('img/block-learn/block-learn__one.webp');"></div>
+								<div class="block-learn__wrapper">
+									<h3 class="block-learn__title title__h3">мы&#160;собрали секции для детей по&#160;всему городу</h3>
+
+									<div class="block-learn__group">
+										<span class="block-learn__tooltip" data-color="green">
+											<p>12</p>
+											<p>секций по&#160;всему городу</p>
+										</span>
+									</div>
+								</div>
+								<a class="block-learn__link" href="#" target="_blank" aria-label="переход на детальную страницу"></a>
+							</article>
+
+							<article class="block-learn__article block-learn__article--green">
+								<div class="block-learn__wrapper">
+									<h3 class="block-learn__title title__h3">Подбери тренера под свой уровень</h3>
+
+									<div class="block-learn__group">
+										<span class="block-learn__tooltip" data-color="transparent">
+											<p>детская тренировка</p>
+										</span>
+
+										<span class="block-learn__tooltip" data-color="transparent">
+											<p>для начинающих</p>
+										</span>
+
+										<span class="block-learn__tooltip" data-color="transparent">
+											<p>стритбол</p>
+										</span>
+
+										<span class="block-learn__tooltip" data-color="transparent">
+											<p>выезд тренера на&#160;дом</p>
+										</span>
+
+										<span class="block-learn__tooltip block-learn__tooltip--active">
+											<p>12</p>
+											<p>фильтров</p>
+										</span>
+									</div>
+								</div>
+								<a class="block-learn__link" href="#" target="_blank" aria-label="переход на детальную страницу"></a>
+							</article>
+
+							<article class="block-learn__article">
+								<div class="block-learn__box">
+									<a class="block-learn__detailed" href="#" aria-label="переход на детальную страницу">
+										Видеоуроки
+										<svg>
+											<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+										</svg>
+									</a>
+								</div>
+
+								<div class="block-learn__block">
+									<figure class="block-learn__figure">
+										<picture>
+											<img src="./img/block-learn/block-learn__two--smal.webp" alt="" />
+										</picture>
+										<a href="#" target="_blank" aria-label="переход на детальную страницу"></a>
+									</figure>
+
+									<div class="block-learn__text">
+										<a class="block-learn__head" href="#" target="_blank">
+											Евгений Воронов: &#171;Бронзовые медали&#160;&#8212; оценка труда нашей команды&#187;
+										</a>
+										<time class="block-learn__date" datetime="2024-10-26">26&#160;октября</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="block-learn__article">
+								<div class="block-learn__box">
+									<a class="block-learn__detailed" href="#" aria-label="переход на детальную страницу">
+										статьи
+										<svg>
+											<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+										</svg>
+									</a>
+								</div>
+
+								<div class="block-learn__block">
+									<div class="block-learn__text">
+										<a class="block-learn__head" href="#" target="_blank">
+											Евгений Воронов: &#171;Бронзовые медали&#160;&#8212; оценка труда нашей команды&#187;
+										</a>
+										<time class="block-learn__date" datetime="2024-10-26">26&#160;октября</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="block-learn__article">
+								<div class="block-learn__box">
+									<a class="block-learn__detailed" href="#" aria-label="переход на детальную страницу">
+										термины
+										<svg>
+											<use href="./img/svgsprite/sprite.symbol.svg#icon__arrow"></use>
+										</svg>
+									</a>
+								</div>
+
+								<div class="block-learn__block">
+									<div class="block-learn__text">
+										<a class="block-learn__head" href="#" target="_blank">
+											Евгений Воронов: &#171;Бронзовые медали&#160;&#8212; оценка труда нашей команды&#187;
+										</a>
+
+										<div class="block-learn__tags">
+											<span class="block-learn__tag">
+												<p>треха</p>
+											</span>
+
+											<span class="block-learn__tag">
+												<p>трехочковый бросок</p>
+											</span>
+
+											<span class="block-learn__tag block-learn__tag--active">
+												<p>36 терминов</p>
+											</span>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
 					</div>
 				</div>
 			</section>
