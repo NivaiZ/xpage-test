@@ -16,6 +16,10 @@
 	font-size: 80px;
 	font-weight: 700;
 	font-family: var(--base-font);
+
+	@media (max-width: 767px) {
+		font-size: 26px;
+	}
 }
 
 .title__h3 {
@@ -23,6 +27,10 @@
 	font-weight: 700;
 	font-family: var(--base-font);
 	line-height: 1.3;
+
+	@media (max-width: 767px) {
+		font-size: 20px;
+	}
 }
 
 .title-4 {

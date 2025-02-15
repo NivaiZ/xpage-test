@@ -1,7 +1,7 @@
 .block-box {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 
 	&__title {
 		text-transform: uppercase;
@@ -18,12 +18,22 @@
 			color: var(--basic-orange);
 			text-transform: uppercase;
 			font-family: var(--base-font);
+
+			@media (max-width: 767px) {
+				font-size: 14px;
+			}
 		}
 
 		svg {
 			width: 24px;
 			height: 24px;
 			fill: var(--basic-orange);
+		}
+
+		@media (max-width: 991px) {
+			svg {
+				display: none;
+			}
 		}
 	}
 

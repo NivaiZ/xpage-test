@@ -11,7 +11,7 @@
 					</a>
 				</div>
 
-				<nav class="header__nav">
+				<nav class="header__nav" data-da=".header__aside-overlay, 991,first">
 					<ul class="header__nav-list">
 						<li class="header__nav-item">
 							<a class="header__nav-link" href="#" aria-label="играть">играть</a>
@@ -36,7 +36,7 @@
 
 				<li class="header__right-item">
 					<button class="header__right-button header__right-gap" data-action="burger-button" aria-label="burger-menu"
-						aria-expanded="false">
+						aria-expanded="false" data-da=".header__wrapper, 991,first">
 						<span class="header__right-button-line"></span>
 						<span class="header__right-button-text">Меню</span>
 					</button>
@@ -50,5 +50,9 @@
 				</li>
 			</ul>
 		</div>
+
+		<aside class="header__aside" data-action="burger-menu" aria-haspopup="false">
+			<div class="header__aside-overlay"></div>
+		</aside>
 	</div>
 </header>

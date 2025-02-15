@@ -1,8 +1,14 @@
 .block-learn {
 	&__inner {
 		background-color: var(--basic-white);
-		padding: 0 32px 0 32px;
+		padding: 32px 32px 32px 32px;
 		border-radius: 20px;
+
+		@media (max-width: 991px) {
+			background-color: transparent;
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 
 	&__content {
@@ -20,6 +26,15 @@
 			width: 1px;
 			height: 100%;
 			background-color: var(--extra-grey);
+		}
+
+		@media (max-width: 991px) {
+			display: flex;
+			flex-direction: column;
+
+			&::after {
+				content: none;
+			}
 		}
 	}
 
@@ -303,6 +318,13 @@
 
 			.block-learn__text {
 				gap: 15px;
+			}
+		}
+
+		@media (max-width: 991px) {
+			&:not(:nth-child(1), :nth-child(2)) {
+				display: none;
+
 			}
 		}
 	}

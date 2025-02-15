@@ -74,3 +74,23 @@ img {
 		scrollbar-color: var(--basic-gold) var(--extra-gold);
 	}
 }
+
+@keyframes slideDown {
+	from {
+		transform: translateY(-100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(-100%);
+	}
+}

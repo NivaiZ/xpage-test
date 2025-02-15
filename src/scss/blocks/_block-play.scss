@@ -43,6 +43,11 @@
 		grid-template-columns: repeat(auto-fill, minmax(621px, 1fr));
 		gap: 6px;
 		margin-top: 65px;
+
+		@media (max-width: 767px) {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	&__icon {

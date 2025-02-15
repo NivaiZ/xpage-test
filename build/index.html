@@ -23,7 +23,7 @@
 							</a>
 						</div>
 
-						<nav class="header__nav">
+						<nav class="header__nav" data-da=".header__aside-overlay, 991,first">
 							<ul class="header__nav-list">
 								<li class="header__nav-item">
 									<a class="header__nav-link" href="#" aria-label="играть">играть</a>
@@ -46,7 +46,13 @@
 
 					<ul class="header__right">
 						<li class="header__right-item">
-							<button class="header__right-button header__right-gap" data-action="burger-button" aria-label="burger-menu" aria-expanded="false">
+							<button
+								class="header__right-button header__right-gap"
+								data-action="burger-button"
+								aria-label="burger-menu"
+								aria-expanded="false"
+								data-da=".header__wrapper, 991,first"
+							>
 								<span class="header__right-button-line"></span>
 								<span class="header__right-button-text">Меню</span>
 							</button>
@@ -60,6 +66,10 @@
 						</li>
 					</ul>
 				</div>
+
+				<aside class="header__aside" data-action="burger-menu" aria-haspopup="false">
+					<div class="header__aside-overlay"></div>
+				</aside>
 			</div>
 		</header>
 		<main class="page-layout">
@@ -216,7 +226,7 @@
 							<article class="block-learn__article block-learn__article--img">
 								<div class="block-learn__bg" style="background-image: url('img/block-learn/block-learn__one.webp');"></div>
 								<div class="block-learn__wrapper">
-									<h3 class="block-learn__title title__h3">мы&#160;собрали секции для детей по&#160;всему городу</h3>
+									<h3 class="block-learn__title title__h3">мы&#160;собрали <br />секции для детей <br />по&#160;всему городу</h3>
 
 									<div class="block-learn__group">
 										<span class="block-learn__tooltip" data-color="green">
@@ -344,6 +354,13 @@
 		</main>
 		<footer class="footer section">
 			<div class="footer__container">
+				<figure class="footer__background">
+					<picture>
+						<source srcset="./img/basket-footer--mobile.webp" media="(max-width: 991px)" />
+						<img src="./img/basket-footer.png" alt="" />
+					</picture>
+				</figure>
+
 				<div class="footer__inner">
 					<div class="footer__content">
 						<strong class="footer__head"
@@ -382,13 +399,6 @@
 					<div class="footer__developer">
 						сделано в&#160;xpage
 					</div>
-
-					<figure class="footer__background">
-						<picture>
-							<source srcset="./img/footer-background.webp" media="(max-width: 991px)" />
-							<img src="./img/basket-footer.png" alt="" />
-						</picture>
-					</figure>
 				</div>
 			</div>
 		</footer>
