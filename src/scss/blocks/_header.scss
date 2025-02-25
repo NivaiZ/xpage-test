@@ -45,6 +45,10 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+
+		@media (max-width: 991px) {
+			height: 100%;
+		}
 	}
 
 
@@ -98,6 +102,14 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+
+		@media (max-width: 991px) {
+			flex-direction: column;
+			height: auto;
+			margin-top: auto;
+			margin-bottom: auto;
+			gap: 20px;
+		}
 	}
 
 	&__logo {
@@ -198,6 +210,24 @@
 		}
 	}
 
+	&__right-button[aria-expanded="true"] {
+		.header__right-button-line {
+			background-color: transparent;
+
+			&::before {
+				top: 0;
+				width: 100%;
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				top: 0;
+				width: 100%;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
 	&__right-item {
 		display: flex;
 		align-items: center;
@@ -229,5 +259,10 @@
 		background-size: cover;
 		border-radius: 21.77px;
 		display: block;
+	}
+
+	&__aside-overlay {
+		height: 100%;
+		width: 100%;
 	}
 }

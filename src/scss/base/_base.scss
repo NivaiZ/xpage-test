@@ -21,12 +21,12 @@ body {
 	&::-webkit-scrollbar {
 		width: 5px;
 		height: 5px;
-		background-color: var(--basic-gold);
+		background-color: var(--extra-orange);
 		border-radius: 5px;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background-color: var(--extra-gold);
+		background-color: var(--basic-orange);
 		border-radius: 5px;
 	}
 }
@@ -36,6 +36,10 @@ body {
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 20px;
+
+	@media (max-width: 991px) {
+		padding: 0 10px;
+	}
 }
 
 img {
@@ -57,11 +61,11 @@ img {
 .body__lock {
 	overflow: hidden;
 
-	.header__left {
+	.header__wrapper {
 		z-index: 5;
 	}
 
-	.header__right {
+	.header__right-gap {
 		z-index: 5;
 	}
 }

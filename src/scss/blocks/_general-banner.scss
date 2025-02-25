@@ -29,11 +29,18 @@
 	&__title {
 		text-transform: uppercase;
 		color: var(--basic-white);
-		position: absolute;
 		z-index: 1;
 		position: relative;
 		padding-bottom: 120px;
 		padding-left: 30px;
+
+		@media (max-width: 991px) {
+			margin-top: auto;
+			margin-bottom: auto;
+			padding-bottom: 0;
+			padding-left: 10px;
+			padding-top: 50px;
+		}
 	}
 
 	&__pagination-bullet.general-banner__pagination-active {
@@ -56,11 +63,17 @@
 
 		@media (max-width: 991px) {
 			flex-wrap: wrap;
+			padding: 0 10px 0 10px;
 		}
 	}
 
 	&__pagination-item {
 		flex: 1;
+
+		@media (max-width: 991px) {
+			width: 100%;
+			flex: unset;
+		}
 	}
 
 	&__pagination-bullet {
@@ -80,6 +93,10 @@
 			font-size: 16px;
 			font-family: var(--base-font);
 			text-transform: uppercase;
+
+			@media (max-width: 767px) {
+				font-size: 14px;
+			}
 		}
 
 		svg {
@@ -103,6 +120,9 @@
 			}
 		}
 
+		@media (max-width: 991px) {
+			padding: 10px 14px 10px 14px;
+		}
 	}
 
 	&__slide {
@@ -113,5 +133,10 @@
 		align-items: flex-end;
 		justify-content: flex-end;
 		margin-right: 20px;
+
+		@media (max-width: 991px) {
+			max-height: 515px;
+			min-height: 515px;
+		}
 	}
 }
